@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Quicksand", sans-serif;
+}
+#box-main{
+  display:grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #ffd7d7;
+  padding: 16px;
+}
+.background-catalogo{
+  position: relative;
+  overflow: visible;
+  background-color: rgb(27, 27, 27);
+  margin: 5em 5em 5em 5em;
+  width: 100%;
+  max-width:1100px;
+  padding: 24px;
+  object-fit: cover;
+  border: none;
+  
+}
+
+@media (min-width: 768px) {
+  .box-main {
+    padding: 40px;
+  }
+
+  .background-catalogo {
+    padding: 40px;
+    flex-direction: row;
+  }
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  gap: 2.5em; 
+  text-align: start;
+  top:0;
+  color:#fff;
+  font-size: 20px;
+}
+
+.cabecalho1{
+  display:flex;
+  flex-direction: row;
+  gap: 0.5em;
+  text-align: center;
+}
+.cabecalho1 img{
+  margin-top: 2.5px;
+  width: 15px;
+  height: 15px;
+
+}
+.cabecalho2 img{
+  display:flex;
+  flex-direction: row;
+  width: 40px;
+  height: 40px;
+  gap: 0.5em;
+}
+.cabecalho3{
+  display:flex;
+  flex-direction: row;
+  text-align: end;
+  gap: 0.5em;
+}
+.cabecalho3 img{
+  margin-top: 2.5px;
+  width: 15px;
+  height: 15px;
+
+}
+
+@keyframes badgeIntro {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.topo{
+   position: absolute;
+  top: 16px;
+  right: 16px;
+
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 10;
+  animation: badgeIntro 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.topo:hover{
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.topo .star{
+  position: absolute;
+  width: 200px;
+  height:200px;
+
+  z-index: 2;
+}
+@media(max-width: 468px){
+  .topo{
+   padding: 4px 10px;
+   font-size: 12px;
+  }
+  
+}
+.free{
+  color:#fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: left;
+  margin: 5em 5em 1em 8em
+}
+.corpo{
+  color:#fff
+}
