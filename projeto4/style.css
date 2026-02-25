@@ -5,104 +5,76 @@
   box-sizing: border-box;
   font-family:"Quicksand", sans-serif;
 }
-#box-main{
-  display:grid;
+
+
+body{
+  display: grid;
   place-items: center;
   min-height: 100vh;
-  background-color: #ffd7d7;
+  color: #ffd7d7;
   max-width: 100%;
-  padding: 16px;
   font-size: clamp(14px, 2.5vw, 16px);
-}
-.background-catalogo{
   position: relative;
   overflow: visible;
   background-color: rgb(27, 27, 27);
   margin: 5em 5em 5em 5em;
   width: 100%;
-  max-width:1100px;
   padding: 24px;
   object-fit: cover;
   border: none;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); 
 }
 
-.background-catalogo h1{
-  margin-top: 5em;
-  font-size: clamp(24px, 5vw, 40px);
-}
-
-h1{
+.hero h1{
   display: flex;
   flex-direction: column;
   align-items: start;
+  color: #fff;
   max-width: 700px;
   margin-top: 2em;
   margin-left: 2em;
+  margin-top: 5em;
+  font-size: clamp(24px, 5vw, 40px);
 }
-h1 .marca{
+h1 .brand{
   color:#ffd7d7;
 }
-.corpo{
-  color:#fff
-}
+
 
 @media (min-width: 768px) {
-  .box-main {
+  body {
     padding: 40px;
-  }
-
-  .background-catalogo {
-    padding: 40px;
-    flex-direction: row;
   }
 }
-.head{
+.site-header{
   display: flex;
   flex-direction: row;
-  gap: 2.5em; 
-  text-align: start;
+  gap: 3em; 
+  text-align: center;
   top:0;
   color:#fff;
   font-size: 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
+  justify-content: space-between;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding:30px;
+  width: 100%;
 
-.cabecalho1{
+}
+.menu{
   display:flex;
   flex-direction: row;
-  border-right: 1px solid rgba(255,255,255,0.1);
   padding:10px;
-  gap: 0.5em;
+  gap: 1em;
   text-align: center;
+  list-style: none;
 }
-.cabecalho1 img{
+
+.menu img{
   margin-top: 2.5px;
   width: 15px;
   height: 15px;
+}
 
-}
-.cabecalho2 img{
-  display:flex;
-  flex-direction: row;
-  width: 40px;
-  height: 40px;
-  gap: 0.5em;
-}
-.cabecalho3{
-  display:flex;
-  flex-direction: row;
-  text-align: end;
-  border-left: 1px solid rgba(255,255,255,0.1);
-  padding:10px 0px 30px 10px;
-  gap: 0.5em;
-}
-.cabecalho3 img{
-  margin-top: 2.5px;
-  width: 15px;
-  height: 15px;
-
-}
 
 @keyframes badgeIntro {
   0% {
@@ -120,9 +92,15 @@ h1 .marca{
     opacity: 1;
   }
 }
-.topo{
-   position: absolute;
-  top: 16px;
+ .star{
+  width: 200px;
+  height:200px;
+
+  z-index: 2;
+ }
+.icon-free{
+  position: absolute;
+   top: 16px;
   right: 16px;
 
   width: 80px;
@@ -155,18 +133,9 @@ h1 .marca{
     opacity: 1;
   }
 }
-.topo:hover{
-  transform: scale(1.12);
-  opacity: 0.8;
-}
 
-.topo .star{
-  position: absolute;
-  width: 200px;
-  height:200px;
 
-  z-index: 2;
-}
+
 @media(max-width: 468px){
   .topo{
     width: 60px;
@@ -183,13 +152,13 @@ h1 .marca{
 }
 
 
-.icone {
+.button-presentation{
  position:absolute;
  right: 50px;
  top:50%;
   transform: translateY(-135%);
 
-   width: 180px;
+  width: 180px;
   height: 180px;
   background-color: #ffd7d7;
   border-radius: 50%;
@@ -203,17 +172,13 @@ h1 .marca{
   gap: 8px;
   cursor:pointer;
 }
-.botao i{
-  font-size: 36px;
-  color:#fff;
-}
-.icone p{
+.button-presentation i{
   font-size: 14px;
   color: #fff;
   max-width: 120px;
   line-height: 1.4;
 }
-.icone:hover {
+.button-presentation:hover {
   background-color: #ffb3b3;
   transform: translateY(-135%) scale(1.1);
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -223,43 +188,46 @@ h1 .marca{
    top:40%;
   }
 }
-.filtros{
-  display:grid;
+
+
+.filters li{
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 1200px;
+  gap:35px;
   margin-bottom: 40px;
-  padding: 40px 24px;
-}
-.frase{
+
   border: 1px solid rgba(255,255,255,0.1);
   padding:30px;
-  margin-bottom:30px;
-
-  max-width: 100%;
+  width: 100%;
 }
-.frase p{
-  margin:0;
-  font-size: 16px;
-  line-height: 20px;
-}
-.galeria{
+.products{
   width: 300px;
   height: 300px;
  display:grid;
  grid-template-columns:repeat(3, 1fr);
- gap:35px;
+ gap: 35px;
 }
-.galeria img{
+.products img{
   width: 300px;
   height: 300px;
   object-fit: cover;
 }
-figcaption{
+
+h2{
+  max-width: 100%;
+   margin:0;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
 }
+
 @media (max-width: 768px) {
-  .filtros {
+  .filters {
     grid-template-columns:repeat(3, 1fr);
   }
 
+}
+
+footer{
+  margin-top: 50px;
 }
