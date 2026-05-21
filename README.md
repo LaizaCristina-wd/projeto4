@@ -12,22 +12,21 @@ Página de catálogo com navegação centralizada, badge animado "FREE", seção
 
 ## 🗂️ Estrutura do Projeto
 
-```
-📁 projeto/
-├── index.html
-├── style.css
+📁 projeto4/
 ├── Dockerfile
 ├── docker-compose.yml
-└── img/
-    ├── category.png
-    ├── 3d-shapes.png
-    ├── shopping-bag.png
-    ├── explosion.png
-    ├── blank-picture-frame-by-pink-velvet-armchair.jpg
-    ├── download.jpeg
-    └── pink-armchair-modern-living-room_23-2151988662.avif
-```
-
+├── README.md
+└── src/
+    ├── index.html
+    ├── style.css
+    └── img/
+        ├── category.png
+        ├── 3d-shapes.png
+        ├── shopping-bag.png
+        ├── explosion.png
+        ├── blank-picture-frame-by-pink-velvet-armchair.jpg
+        ├── download.jpeg
+        └── pink-armchair-modern-living-room_23-2151988662.avif
 ---
 
 ## 🚀 Como Usar
