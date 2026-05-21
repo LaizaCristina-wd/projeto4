@@ -6,7 +6,7 @@ Catálogo online de móveis premium da marca **B.BRAND**, desenvolvido com HTML 
 
 ## 📸 Visão Geral
 
-Página de catálogo com navegação centralizada, badge animado "FREE", seção de filtros e grid de produtos.
+Página de catálogo com navegação centralizada.
 
 ---
 
