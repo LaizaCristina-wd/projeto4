@@ -12,6 +12,7 @@ Página de catálogo com navegação centralizada, badge animado "FREE", seção
 
 ## 🗂️ Estrutura do Projeto
 
+```
 📁 projeto4/
 ├── Dockerfile
 ├── docker-compose.yml
@@ -27,6 +28,8 @@ Página de catálogo com navegação centralizada, badge animado "FREE", seção
         ├── blank-picture-frame-by-pink-velvet-armchair.jpg
         ├── download.jpeg
         └── pink-armchair-modern-living-room_23-2151988662.avif
+```
+
 ---
 
 ## 🚀 Como Usar
@@ -92,6 +95,7 @@ As cores e fontes estão centralizadas em variáveis no `:root` do `style.css`:
 }
 ```
 
+---
 
 ## 📄 Licença
 
